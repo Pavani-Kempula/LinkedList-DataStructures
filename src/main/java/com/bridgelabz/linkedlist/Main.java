@@ -97,5 +97,21 @@ public class Main {
         linkedlistSingly.deleteAt(2);
         linkedlistSingly.printNode();
         System.out.println("After deleting the node curruent linkedlist size is : " + linkedlistSingly.size());
+
+        System.out.println("----------------------------------------------------");
+
+        System.out.println("\n"+ "Singly linkedList :" + "\n");
+        SinglyLinkedList linkedlistSort = new SinglyLinkedList();
+        linkedlistSort.appendAtLast(56);
+        linkedlistSort.appendAtLast(30);
+        linkedlistSort.appendAtLast(40);
+        linkedlistSort.appendAtLast(70);
+        //printing linkedlist.
+        System.out.println("Linkedlist before sorting");
+        linkedlistSingly.printNode();
+        System.out.println("LinkedList after sorting.");
+        linkedlistSort.sort();
+        linkedlistSort.printNode();
+        System.out.println("-----------------------------------------------------");
     }
 }

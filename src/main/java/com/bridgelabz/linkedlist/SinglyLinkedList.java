@@ -167,6 +167,27 @@ public class SinglyLinkedList {
     }
 
     /*
+     * Name : sort
+     *
+     * Description : Sorting the linkedlist in Ascending order.
+     */
+    public void sort() {
+        Node i = new Node();
+        Node j = new Node();
+        int tempNode;
+
+        for(i=head; i.nextNode != null; i=i.nextNode) {
+            for(j=i.nextNode; j != null; j=j.nextNode) {
+                if(i.data > j.data) {
+                    tempNode = i.data;
+                    i.data = j.data;
+                    j.data = tempNode;
+                }
+            }
+        }
+    }
+
+    /*
      * Name : printNode
      *
      * Description : Printing LinkedList
