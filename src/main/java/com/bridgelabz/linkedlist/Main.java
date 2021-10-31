@@ -40,14 +40,26 @@ public class Main {
 
         System.out.println("------------------------------------------------------");
 
-        System.out.println("\n"+ "Linked List before deleting node :" + "\n");
+        System.out.println("\n"+ "Linked List before deleting first node :" + "\n");
         SinglyLinkedList linkedlistDeleteNode = new SinglyLinkedList();
         linkedlistDeleteNode.appendAtLast(56);
         linkedlistDeleteNode.appendAtLast(30);
         linkedlistDeleteNode.appendAtLast(70);
         linkedlistDeleteNode.printNode();
-        System.out.println("\n"+ "Linked List after deleteing node :" + "\n");
+        System.out.println("\n"+ "Linked List after deleteing first node :" + "\n");
         linkedlistDeleteNode.deleteAt(0);//providing index number.
         linkedlistDeleteNode.printNode();
+
+        System.out.println("------------------------------------------------------");
+
+        System.out.println("\n"+ "Linked List before deleting last node :" + "\n");
+        SinglyLinkedList linkedlistDeleteLastNode = new SinglyLinkedList();
+        linkedlistDeleteLastNode.appendAtLast(56);
+        linkedlistDeleteLastNode.appendAtLast(30);
+        linkedlistDeleteLastNode.appendAtLast(70);
+        linkedlistDeleteLastNode.printNode();
+        System.out.println("\n"+ "Linked List after deleteing last node :" + "\n");
+        linkedlistDeleteLastNode.deleteAt(2);//providing index number.
+        linkedlistDeleteLastNode.printNode();
     }
 }

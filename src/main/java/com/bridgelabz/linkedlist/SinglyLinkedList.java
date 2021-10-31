@@ -36,7 +36,7 @@ public class SinglyLinkedList {
         }
     }
 
-    /**
+    /*
      * Name : appendAtLast
      *
      * Description : Appending newly node at the last.
@@ -63,7 +63,7 @@ public class SinglyLinkedList {
         }
     }
 
-    /**
+    /*
      * Name : insertAtLocation
      *
      * Description : Inserting new node at specific position.
@@ -96,7 +96,7 @@ public class SinglyLinkedList {
         }
     }
 
-    /**
+    /*
      * Name : deleteAt
      *
      * Description : Deleting node as per index number provided.
@@ -125,7 +125,7 @@ public class SinglyLinkedList {
         }
     }
 
-    /**
+    /*
      * Name : printNode
      *
      * Description : Printing LinkedList
