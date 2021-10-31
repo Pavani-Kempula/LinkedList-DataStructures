@@ -10,7 +10,7 @@ public class SinglyLinkedList {
     //Initially head is tail.
     Node head = null;
 
-    /*
+    /**
      * Name : addNode
      *
      * Description : Create or add New-Node.
@@ -39,7 +39,7 @@ public class SinglyLinkedList {
         }
     }
 
-    /*
+    /**
      * Name : appendAtLast
      *
      * Description : Appending newly node at the last.
@@ -49,7 +49,6 @@ public class SinglyLinkedList {
      * Algorithm : Traversing the linkedlist using while loop.
      * when the nextNode is null comes appending the newly created node to it
      * which becomes the last node of linkedlist.
-     *
      */
     public void appendAtLast(int data)
     {
@@ -71,7 +70,45 @@ public class SinglyLinkedList {
         }
     }
 
-    /*
+    /**
+     * Name : insertAtLocation
+     *
+     * Description : Inserting new node at specific position.
+     *
+     * @param index
+     * @param data
+     *
+     * Algorithm : Method takes input as index which holds at what index position
+     * new node to be added along with the data.
+     * If index is null calling addNode() method that will create new node.
+     * else new node will get inserted at the specific index position.
+     */
+    public void insertAtLocation(int index, int data)
+    {
+        Node newNode = new Node(data);
+        newNode.data = data;
+        newNode.nextNode = null;
+
+		/*if index is 0 then calling insertAtStart() function
+		that will insert element at 0'th position.*/
+        if(index == 0)
+        {
+            addNode(data);
+        }
+        else
+        {
+            Node tempNode = head;
+            for(int i=0; i<index-1; i++)
+            {
+                tempNode = tempNode.nextNode;
+            }
+            newNode.nextNode = tempNode.nextNode;
+            tempNode.nextNode = newNode;
+        }
+
+    }
+
+    /**
      * Name : printNode
      *
      * Description : Printing LinkedList
@@ -79,7 +116,6 @@ public class SinglyLinkedList {
      * Algorithm : Creating tempNode that will traverse till the last node in while loop
      * until it comes to nextNode which is null.
      * Printing the current node as tempNode moves forward.
-     *
      */
     public void printNode()
     {
