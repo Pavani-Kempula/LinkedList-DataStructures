@@ -82,5 +82,20 @@ public class Main {
         //adding new node between 56 and 70.
         linkedlistNodeInsertAt.insertAtLocation(2, 40);
         linkedlistNodeInsertAt.printNode();
+
+        System.out.println("----------------------------------------------------");
+
+        System.out.println("\n"+ "Singly linkedList :" + "\n");
+        SinglyLinkedList linkedlistSingly = new SinglyLinkedList();
+        linkedlistSingly.appendAtLast(56);
+        linkedlistSingly.appendAtLast(30);
+        linkedlistSingly.appendAtLast(40);
+        linkedlistSingly.appendAtLast(70);
+        //printing linkedlist.
+        linkedlistSingly.printNode();
+        System.out.println("-----------------------------------------------------");
+        linkedlistSingly.deleteAt(2);
+        linkedlistSingly.printNode();
+        System.out.println("After deleting the node curruent linkedlist size is : " + linkedlistSingly.size());
     }
 }
