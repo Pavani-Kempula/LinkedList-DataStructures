@@ -10,7 +10,7 @@ public class SinglyLinkedList {
     //Initially head is tail.
     Node head = null;
 
-    /**
+    /*
      * Name : addNode
      *
      * Description : Create or add New-Node.
@@ -123,6 +123,30 @@ public class SinglyLinkedList {
             tempNode.nextNode = tempNodeTwo.nextNode;
             System.out.println("Element we are deleting is : " + tempNodeTwo.data);
         }
+    }
+
+    /*
+     * Name : searchElement
+     *
+     * Description : Searching for a specified element in linkedlist.
+     *
+     * @param data
+     *
+     * Algorithm : This method accept data which we want to find in linkedlist.
+     * will traverse from the start of the link list to the end at the same time keeping count
+     * of how many iteration  it did and keep on checking node data with the given data to method.
+     * if found printing the appropriate message aloung with the itteratio count that is nothig but
+     * index number of that node where we found the data ( element ).
+     */
+    public void searchElement(int data) {
+        Node tempNode = new Node(data);
+        tempNode = head;
+        int indexAt = 0;
+        while(tempNode.data != data) {
+            tempNode = tempNode.nextNode;
+            indexAt ++;
+        }
+        System.out.println("Element " + data + " found at index position : " + indexAt);
     }
 
     /*

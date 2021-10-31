@@ -61,5 +61,16 @@ public class Main {
         System.out.println("\n"+ "Linked List after deleteing last node :" + "\n");
         linkedlistDeleteLastNode.deleteAt(2);//providing index number.
         linkedlistDeleteLastNode.printNode();
+
+        System.out.println("------------------------------------------------------");
+
+        System.out.println("\n"+ "Singly linkedlist :" + "\n");
+        SinglyLinkedList linkedlistSearchElement = new SinglyLinkedList();
+        linkedlistSearchElement.appendAtLast(56);
+        linkedlistSearchElement.appendAtLast(30);
+        linkedlistSearchElement.appendAtLast(70);
+        linkedlistSearchElement.printNode();
+        System.out.println("\n"+ "Searching for specific element in linkedlist :" + "\n");
+        linkedlistSearchElement.searchElement(30);//providing index number.
     }
 }
