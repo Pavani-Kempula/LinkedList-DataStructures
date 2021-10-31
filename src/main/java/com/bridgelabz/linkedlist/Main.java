@@ -6,11 +6,14 @@ public class Main {
         // Displaying Welcome Message
         System.out.println("Welcome to LinkedList Program");
 
-        SinglyLinkedList linkedlistObject = new SinglyLinkedList();
+        SinglyLinkedList linkedlistAtStartObject = new SinglyLinkedList();
         //Creating linkedlist node and passing int type data in it.
-        linkedlistObject.addNode(56);
-        linkedlistObject.addNode(30);
-        linkedlistObject.addNode(70);
+        System.out.println("Adding new node at start position :"+"\n");
+        linkedlistAtStartObject.addNode(56);
+        linkedlistAtStartObject.addNode(30);
+        linkedlistAtStartObject.addNode(70);
+        //printing linkedList.
+        linkedlistAtStartObject.printNode();
 
     }
 }
