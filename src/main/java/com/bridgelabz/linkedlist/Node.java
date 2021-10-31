@@ -6,8 +6,7 @@ public class Node {
     int data;
     //nextNode will store reference to next node.
     Node nextNode;
-    public Node(int data)
-    {
+    public Node(int data) {
         this.data = data;
         this.nextNode = null;
     }

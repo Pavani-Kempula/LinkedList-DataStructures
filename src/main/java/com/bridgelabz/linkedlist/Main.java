@@ -15,7 +15,7 @@ public class Main {
         //printing linkedList.
         linkedlistAtStartObject.printNode();
 
-        System.out.println("--------------------");
+        System.out.println("----------------------------------------------------");
 
         System.out.println("\n"+ "Adding new node at last position :" + "\n");
         SinglyLinkedList linkedlistAppendAtLast = new SinglyLinkedList();
@@ -25,7 +25,7 @@ public class Main {
         //printing append at last linkedlist.
         linkedlistAppendAtLast.printNode();
 
-        System.out.println("--------------------");
+        System.out.println("-----------------------------------------------------");
 
         System.out.println("\n"+ "Adding new node at specific position :" + "\n");
         SinglyLinkedList linkedlistNodeInsertAt = new SinglyLinkedList();
@@ -38,5 +38,16 @@ public class Main {
         linkedlistNodeInsertAt.insertAtLocation(1, 30);
         linkedlistNodeInsertAt.printNode();
 
+        System.out.println("------------------------------------------------------");
+
+        System.out.println("\n"+ "Linked List before deleting node :" + "\n");
+        SinglyLinkedList linkedlistDeleteNode = new SinglyLinkedList();
+        linkedlistDeleteNode.appendAtLast(56);
+        linkedlistDeleteNode.appendAtLast(30);
+        linkedlistDeleteNode.appendAtLast(70);
+        linkedlistDeleteNode.printNode();
+        System.out.println("\n"+ "Linked List after deleteing node :" + "\n");
+        linkedlistDeleteNode.deleteAt(0);//providing index number.
+        linkedlistDeleteNode.printNode();
     }
 }
